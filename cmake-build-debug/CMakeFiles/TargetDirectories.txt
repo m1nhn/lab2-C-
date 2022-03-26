@@ -1,0 +1,3 @@
+/Users/nguyenminh/CLionProjects/ll2/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Users/nguyenminh/CLionProjects/ll2/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/nguyenminh/CLionProjects/ll2/cmake-build-debug/CMakeFiles/ll2.dir
