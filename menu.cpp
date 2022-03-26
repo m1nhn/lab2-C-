@@ -5,6 +5,7 @@
 #include <iostream>
 #include <locale>
 
+
 Menu::Menu() {
     Number = 0;
     cout << "Введите номер команды:\n";
@@ -17,12 +18,14 @@ Menu::Menu() {
     cin >> Number;
 }
 
-void Menu::select(Menu settings) {
+void Menu::setNum(int &choice) {
+    Number = choice;
+}
+
+void Menu::select() {
     VectorR3 r1, r2;
     float x, y, z;
-
-    switch(settings.Number){
-
+    switch(Number){
         case 1:
             cout << "Введите первый вектор\n";
             cin >> x >> y >> z;
@@ -54,7 +57,7 @@ void Menu::select(Menu settings) {
             cin >> x >> y >> z;
             r1.setXYZ(x, y, z);
 
-            cout << "Длина вектора =\n" << VectorR3::lenVectors(r1);
+            cout << "Длина вектора =\n" << r1.lenVectors();
             break;
 
 
@@ -62,12 +65,12 @@ void Menu::select(Menu settings) {
             cout << "Введите первый вектор\n";
             cin >> x >> y >> z;
             r1.setXYZ(x, y, z);
-
+            cout << r1;
             cout << "Введите второй вектор\n";
             cin >> x >> y >> z;
             r2.setXYZ(x, y, z);
-
-            cout << "Угол между двумя векторами = " << VectorR3::angleVector(r1,r2);
+            cout << r2;
+            cout << "Угол между двумя векторами = " << r2.angleVector(r1);
             break;
 
         case 5:
@@ -85,3 +88,4 @@ void Menu::select(Menu settings) {
     }
 
 }
+
