@@ -4,7 +4,7 @@
 using namespace std;
 
 int main() {
-    Menu settings;
-    Menu::select(settings);
+    Menu choices;
+    choices.select();
     return 0;
 }
