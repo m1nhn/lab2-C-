@@ -12,6 +12,8 @@ private:
     int Number;
 public:
     Menu();
-    static void select(Menu settings);
+    void setNum(int &num);
+    void getNum();
+    void select();
 };
 #endif //LL2_MENU_H
